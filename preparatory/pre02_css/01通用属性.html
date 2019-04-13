@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        name：名称
+        class：类
+        id：唯一标识
+        title：标题
+        style：样式
+    -->
+    <div name="a1">123</div>
+    <div class="c1 c2" id="d1">123</div>
+    <div class="c1 c3" id="d2">123</div>
+    <div title="这是链接">123</div>
+    <!--标签关系-->
+    <!--
+        后代关系：包含关系、父子关系
+        兄弟关系：同级关系，必须属于同父级关系
+    -->
+    <div id="d3">
+        <p>内容1</p>
+        <div>
+            <p>内容2</p>
+            <div>内容3</div>
+        </div>
+    </div>
+    <div>
+        <p>内容4</p>
+        <div>内容5</div>
+    </div>
+
+</body>
+</html>
