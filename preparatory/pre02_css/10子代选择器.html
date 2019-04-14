@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+    #d1>div>p {
+        background: red;
+    }
+    </style>
+</head>
+<body>
+    <!--子代选择器-->
+    <!--
+        语法：选择器1 > 选择器2 {属性}
+        含义：选择选择器1的子元素选择器2
+    -->
+    <div id="d1">
+        <p>段落1</p>
+        <div id="d2">
+            <p>段落2</p>
+        </div>
+        <div >
+            <p>段落2-1</p>
+        </div>
+    </div>
+    <p>段落3</p>
+</body>
+</html>
