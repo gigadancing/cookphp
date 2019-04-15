@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css">
-        #d1{
+        #d1 {
             background: aqua;
         }
-        div{
+        div {
             background: greenyellow;
         }
-        .c1{
+        .c1 {
+            background: red;
+        }
+        #d2 div {
+            background: orange;
+        }
+        #d2 .c1 {
+            background: pink;
+        }
+        #d2 #d1 {
+            background: yellow;
+        }
+
+        div .c2 {
+            background: aqua;
+        }
+        div .c1{
             background: red;
         }
 
@@ -19,10 +35,22 @@
 <body>
     <!--选择器优先级-->
     <!--
-        选择器优先级：ID选择器 > 类选择器 > 标签选择器 > 通用选择器
+        选择器优先级：ID选择器（100） > 类选择器（10） > 标签选择器（1） > 通用选择器（0）
+        复合选择器：把权重相加，得到的结果越大，优先级越高
     -->
-    <div class="c1" id="d1">
-        div
+    <div id="d2">
+        <div class="c1" id="d1">
+            div
+        </div>
+    </div>
+
+    <!--
+        如果相加后权重一样，后面会覆盖前面的。
+    -->
+    <div>
+        <div class="c1 c2">
+            内容
+        </div>
     </div>
 
 </body>
