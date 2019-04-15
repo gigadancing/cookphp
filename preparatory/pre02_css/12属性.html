@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div {
+            border: 1px solid red; /*一个像素的实线边框*/
+            width: 100px;
+            height: 100px;
+            display: inline; /*转化为行元素*/
+            font-size: 60px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 宋体;
+        }
+        /* 行内元素不能设置宽高
+           除非将它转换为块元素
+           inline-block：行内块，既可以设置宽高，又可以在同行显示
+           none 隐藏（不显示）一个元素
+         */
+        span {
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            display: block; /*转化未块元素*/
+            color:red;
+            text-align: left;
+            text-decoration: underline;
+            text-indent: 2em;
+            letter-spacing: 20px;
+            word-spacing: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        字体：
+            font-size：字体大小
+            font-family：字体样式
+            font-weight：加粗 bold normal
+            font-style：倾斜 italic normal
+        文本：
+            color：颜色
+            text-align：对齐方式
+            text-decoration：文本线 underline line-through overline
+            text-indent：首行缩进
+            letter-spacing：字与字间距
+            word-spacing：词与词间距
+            line-height：行高
+    -->
+
+    <div>div植物大战僵尸</div>
+
+    <span>span你好hello World!!!</span>
+
+    <a href="#">链接</a>
+
+</body>
+</html>
